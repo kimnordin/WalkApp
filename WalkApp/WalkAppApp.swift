@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct WalkAppApp: App {
+    @StateObject private var dogData = DogArray()
+    @StateObject private var user = User()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DogListView(viewModel: DogListViewModel())
+                .environmentObject(user)
+                .environmentObject(dogData)
         }
     }
 }

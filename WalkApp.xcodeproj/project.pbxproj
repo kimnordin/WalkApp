@@ -8,18 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		F29CEB2E26D6E05900C0F879 /* WalkAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB2D26D6E05900C0F879 /* WalkAppApp.swift */; };
-		F29CEB3026D6E05900C0F879 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB2F26D6E05900C0F879 /* ContentView.swift */; };
 		F29CEB3226D6E05B00C0F879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29CEB3126D6E05B00C0F879 /* Assets.xcassets */; };
 		F29CEB3526D6E05B00C0F879 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29CEB3426D6E05B00C0F879 /* Preview Assets.xcassets */; };
+		F29CEB9226D6E0EC00C0F879 /* NewDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB7E26D6E0EB00C0F879 /* NewDogView.swift */; };
+		F29CEB9326D6E0EC00C0F879 /* NewDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB7F26D6E0EB00C0F879 /* NewDogViewModel.swift */; };
+		F29CEB9426D6E0EC00C0F879 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8126D6E0EB00C0F879 /* ModalView.swift */; };
+		F29CEB9526D6E0EC00C0F879 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8326D6E0EB00C0F879 /* DogDetailView.swift */; };
+		F29CEB9626D6E0EC00C0F879 /* TimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8526D6E0EB00C0F879 /* TimeRow.swift */; };
+		F29CEB9726D6E0EC00C0F879 /* WalkSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8726D6E0EB00C0F879 /* WalkSectionView.swift */; };
+		F29CEB9826D6E0EC00C0F879 /* DogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8926D6E0EB00C0F879 /* DogListViewModel.swift */; };
+		F29CEB9926D6E0EC00C0F879 /* DogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8A26D6E0EB00C0F879 /* DogListView.swift */; };
+		F29CEB9A26D6E0EC00C0F879 /* DogListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8C26D6E0EB00C0F879 /* DogListRow.swift */; };
+		F29CEB9B26D6E0EC00C0F879 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8E26D6E0EC00C0F879 /* ProfileView.swift */; };
+		F29CEBA326D6E13200C0F879 /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEBA026D6E13200C0F879 /* Walk.swift */; };
+		F29CEBA426D6E13200C0F879 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEBA126D6E13200C0F879 /* User.swift */; };
+		F29CEBA526D6E13200C0F879 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEBA226D6E13200C0F879 /* Dog.swift */; };
+		F29CEBAA26D6E16F00C0F879 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEBA726D6E16F00C0F879 /* ImagePicker.swift */; };
+		F29CEBAB26D6E16F00C0F879 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEBA826D6E16F00C0F879 /* Extensions.swift */; };
+		F29CEBAC26D6E16F00C0F879 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEBA926D6E16F00C0F879 /* Alerts.swift */; };
+		F29CEBAE26D6E2E200C0F879 /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F29CEBAD26D6E2E200C0F879 /* Colors.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F29CEB2A26D6E05900C0F879 /* WalkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29CEB2D26D6E05900C0F879 /* WalkAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkAppApp.swift; sourceTree = "<group>"; };
-		F29CEB2F26D6E05900C0F879 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F29CEB3126D6E05B00C0F879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F29CEB3426D6E05B00C0F879 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F29CEB3626D6E05B00C0F879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29CEB7E26D6E0EB00C0F879 /* NewDogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDogView.swift; sourceTree = "<group>"; };
+		F29CEB7F26D6E0EB00C0F879 /* NewDogViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDogViewModel.swift; sourceTree = "<group>"; };
+		F29CEB8126D6E0EB00C0F879 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		F29CEB8326D6E0EB00C0F879 /* DogDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
+		F29CEB8526D6E0EB00C0F879 /* TimeRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRow.swift; sourceTree = "<group>"; };
+		F29CEB8726D6E0EB00C0F879 /* WalkSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkSectionView.swift; sourceTree = "<group>"; };
+		F29CEB8926D6E0EB00C0F879 /* DogListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogListViewModel.swift; sourceTree = "<group>"; };
+		F29CEB8A26D6E0EB00C0F879 /* DogListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogListView.swift; sourceTree = "<group>"; };
+		F29CEB8C26D6E0EB00C0F879 /* DogListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogListRow.swift; sourceTree = "<group>"; };
+		F29CEB8E26D6E0EC00C0F879 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F29CEBA026D6E13200C0F879 /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		F29CEBA126D6E13200C0F879 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F29CEBA226D6E13200C0F879 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		F29CEBA726D6E16F00C0F879 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F29CEBA826D6E16F00C0F879 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F29CEBA926D6E16F00C0F879 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		F29CEBAD26D6E2E200C0F879 /* Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +84,13 @@
 		F29CEB2C26D6E05900C0F879 /* WalkApp */ = {
 			isa = PBXGroup;
 			children = (
+				F29CEB3C26D6E07800C0F879 /* Models */,
+				F29CEB3D26D6E07E00C0F879 /* Views */,
 				F29CEB2D26D6E05900C0F879 /* WalkAppApp.swift */,
-				F29CEB2F26D6E05900C0F879 /* ContentView.swift */,
 				F29CEB3126D6E05B00C0F879 /* Assets.xcassets */,
 				F29CEB3626D6E05B00C0F879 /* Info.plist */,
+				F29CEBAD26D6E2E200C0F879 /* Colors.plist */,
+				F29CEBA626D6E16F00C0F879 /* Utils */,
 				F29CEB3326D6E05B00C0F879 /* Preview Content */,
 			);
 			path = WalkApp;
@@ -67,6 +102,108 @@
 				F29CEB3426D6E05B00C0F879 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F29CEB3C26D6E07800C0F879 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEBA226D6E13200C0F879 /* Dog.swift */,
+				F29CEBA126D6E13200C0F879 /* User.swift */,
+				F29CEBA026D6E13200C0F879 /* Walk.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F29CEB3D26D6E07E00C0F879 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEB8226D6E0EB00C0F879 /* Dog */,
+				F29CEB8026D6E0EB00C0F879 /* Modal */,
+				F29CEB8826D6E0EB00C0F879 /* MyDogs */,
+				F29CEB7D26D6E0EB00C0F879 /* NewDog */,
+				F29CEB8D26D6E0EB00C0F879 /* Profile */,
+				F29CEB8626D6E0EB00C0F879 /* WalkSection */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F29CEB7D26D6E0EB00C0F879 /* NewDog */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEB7E26D6E0EB00C0F879 /* NewDogView.swift */,
+				F29CEB7F26D6E0EB00C0F879 /* NewDogViewModel.swift */,
+			);
+			path = NewDog;
+			sourceTree = "<group>";
+		};
+		F29CEB8026D6E0EB00C0F879 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEB8126D6E0EB00C0F879 /* ModalView.swift */,
+			);
+			name = Modal;
+			path = ../../../../git/goDogUI/goDogUI/Views/Modal;
+			sourceTree = "<group>";
+		};
+		F29CEB8226D6E0EB00C0F879 /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEB8326D6E0EB00C0F879 /* DogDetailView.swift */,
+				F29CEB8426D6E0EB00C0F879 /* TimeRow */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		F29CEB8426D6E0EB00C0F879 /* TimeRow */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEB8526D6E0EB00C0F879 /* TimeRow.swift */,
+			);
+			path = TimeRow;
+			sourceTree = "<group>";
+		};
+		F29CEB8626D6E0EB00C0F879 /* WalkSection */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEB8726D6E0EB00C0F879 /* WalkSectionView.swift */,
+			);
+			path = WalkSection;
+			sourceTree = "<group>";
+		};
+		F29CEB8826D6E0EB00C0F879 /* MyDogs */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEB8926D6E0EB00C0F879 /* DogListViewModel.swift */,
+				F29CEB8A26D6E0EB00C0F879 /* DogListView.swift */,
+				F29CEB8B26D6E0EB00C0F879 /* DogRows */,
+			);
+			path = MyDogs;
+			sourceTree = "<group>";
+		};
+		F29CEB8B26D6E0EB00C0F879 /* DogRows */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEB8C26D6E0EB00C0F879 /* DogListRow.swift */,
+			);
+			path = DogRows;
+			sourceTree = "<group>";
+		};
+		F29CEB8D26D6E0EB00C0F879 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEB8E26D6E0EC00C0F879 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F29CEBA626D6E16F00C0F879 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEBA726D6E16F00C0F879 /* ImagePicker.swift */,
+				F29CEBA826D6E16F00C0F879 /* Extensions.swift */,
+				F29CEBA926D6E16F00C0F879 /* Alerts.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29CEBAE26D6E2E200C0F879 /* Colors.plist in Resources */,
 				F29CEB3526D6E05B00C0F879 /* Preview Assets.xcassets in Resources */,
 				F29CEB3226D6E05B00C0F879 /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +276,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F29CEB3026D6E05900C0F879 /* ContentView.swift in Sources */,
+				F29CEB9726D6E0EC00C0F879 /* WalkSectionView.swift in Sources */,
+				F29CEBAC26D6E16F00C0F879 /* Alerts.swift in Sources */,
+				F29CEBAB26D6E16F00C0F879 /* Extensions.swift in Sources */,
+				F29CEB9526D6E0EC00C0F879 /* DogDetailView.swift in Sources */,
+				F29CEB9626D6E0EC00C0F879 /* TimeRow.swift in Sources */,
+				F29CEBAA26D6E16F00C0F879 /* ImagePicker.swift in Sources */,
+				F29CEBA426D6E13200C0F879 /* User.swift in Sources */,
+				F29CEB9826D6E0EC00C0F879 /* DogListViewModel.swift in Sources */,
+				F29CEB9226D6E0EC00C0F879 /* NewDogView.swift in Sources */,
+				F29CEBA326D6E13200C0F879 /* Walk.swift in Sources */,
+				F29CEBA526D6E13200C0F879 /* Dog.swift in Sources */,
+				F29CEB9A26D6E0EC00C0F879 /* DogListRow.swift in Sources */,
 				F29CEB2E26D6E05900C0F879 /* WalkAppApp.swift in Sources */,
+				F29CEB9926D6E0EC00C0F879 /* DogListView.swift in Sources */,
+				F29CEB9426D6E0EC00C0F879 /* ModalView.swift in Sources */,
+				F29CEB9B26D6E0EC00C0F879 /* ProfileView.swift in Sources */,
+				F29CEB9326D6E0EC00C0F879 /* NewDogViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
