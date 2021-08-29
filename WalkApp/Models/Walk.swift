@@ -9,7 +9,6 @@
 import Foundation
 
 struct Walk: Codable {
-    let id = UUID()
     var time: Date
     var firstAction: Bool?
     var secondAction: Bool?
