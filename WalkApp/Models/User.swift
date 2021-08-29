@@ -30,7 +30,7 @@ class User: ObservableObject {
     }
 }
 
-class Profile: Identifiable, Codable {
+struct Profile: Identifiable, Codable {
     enum CodingKeys: CodingKey {
         case walkColor, firstColor, secondColor
     }
@@ -48,7 +48,7 @@ class Profile: Identifiable, Codable {
         self.secondColor = secondColor
     }
     
-    required init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
         let walkData = try container.decode(Data.self, forKey: .walkColor)

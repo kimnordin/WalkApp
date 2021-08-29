@@ -81,10 +81,11 @@ struct ProfileView: View {
             if presentModal {
                 ModalView() {
                     ScrollView {
-                        VStack(spacing: 10) {
+                        VStack(spacing: 40) {
                             ForEach(colors, id: \.self) { color in
                                 ColorView(color: color)
                                     .frame(minWidth: 20, maxWidth: .infinity, minHeight: 20, maxHeight: .infinity)
+                                    .padding([.leading, .trailing], 20)
                             }
                         }
                     }
