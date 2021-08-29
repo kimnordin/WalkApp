@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct DogListView: View {
-    @ObservedObject var viewModel: DogListViewModel
     @EnvironmentObject var user: User
     @EnvironmentObject var dogs: DogArray
     @State private var presentNew = false
     @State private var presentProfile = false
-    
-    var body: some View {
+    var body: some View { //MARK: View
         NavigationView {
             List {
                 ForEach(0..<dogs.list.count, id: \.self) { dog in
@@ -29,7 +27,7 @@ struct DogListView: View {
                 .onDelete(perform: delete)
             }
             .background(NavigationLink(
-                destination: NewDogView(viewModel: NewDogViewModel()),
+                destination: NewDogView(),
                 isActive: $presentNew) {
             })
             .background(NavigationLink(
@@ -50,9 +48,6 @@ struct DogListView: View {
                                         }
                                     }
             )
-            .onAppear {
-                viewModel.setup(dogs)
-            }
         }
     }
     private func move(at indexSet: IndexSet, to destination: Int) {
@@ -67,7 +62,7 @@ struct DogListView: View {
 struct DogsList_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DogListView(viewModel: DogListViewModel())
+            DogListView()
         }
     }
 }

@@ -18,14 +18,18 @@ struct DogListRow: View {
                 .frame(width: 80, height: 80)
                 .clipShape(Circle())
                 .padding()
-
-            if !dog.walkArray.isEmpty {
-                if let firstWalk = dog.walkArray.first {
-                    if let time = firstWalk.time.timeToString() {
-                        VStack {
-                            Text("Latest Walk")
-                                .font(.footnote)
-                            Text(time)
+            VStack(spacing: 4) {
+                Text(dog.name)
+                    .font(.title)
+                    .lineLimit(2)
+                if !dog.walkArray.isEmpty {
+                    if let firstWalk = dog.walkArray.first {
+                        if let time = firstWalk.time.timeToString() {
+                            VStack {
+                                Text("Latest Walk")
+                                    .font(.footnote)
+                                Text(time)
+                            }
                         }
                     }
                 }

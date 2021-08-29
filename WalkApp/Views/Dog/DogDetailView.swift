@@ -10,8 +10,7 @@ import CoreMotion
 
 struct DogDetailView: View {
     @ObservedObject var dog: Dog
-    private let pedometer = CMPedometer()
-    var body: some View {
+    var body: some View { //MARK: View
         // Dog Section
         ZStack {
             VStack {
@@ -32,7 +31,6 @@ struct DogDetailView: View {
                 List {
                     ForEach(0..<dog.walkArray.count, id: \.self) { walk in
                         ZStack(alignment: .leading) {
-                            
                             TimeRow(walk: dog.walkArray[walk])
                         }
                     }

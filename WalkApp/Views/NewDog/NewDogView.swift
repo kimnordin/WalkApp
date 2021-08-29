@@ -9,60 +9,55 @@ import SwiftUI
 
 struct NewDogView: View {
     @Environment(\.presentationMode) var presentation
-    @State private var currentDate = Date()
-    @State private var showDate = true
     @EnvironmentObject var dogs: DogArray
-    @ObservedObject var viewModel = NewDogViewModel()
+    @State var alertItem: AlertItem?
     @State var dogCreated: Bool = false
+    @State var name: String = ""
+    @State var uiImage: UIImage? = nil
+    @State var showAction: Bool = false
+    @State var showImagePicker: Bool = false
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
-            if (viewModel.uiImage == nil) {
+            if (uiImage == nil) {
                 Image(systemName: "camera.circle.fill")
                     .resizable()
                     .frame(width: 130, height: 130)
                     .onTapGesture {
-                        viewModel.displayImagePicker()
+                        displayImagePicker()
                     }
             } else {
-                Image(uiImage: viewModel.uiImage!)
+                Image(uiImage: uiImage!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200, height: 200)
                     .cornerRadius(15)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                     .onTapGesture {
-                        viewModel.displayActionSheet()
+                        displayActionSheet()
                     }
             }
-            TextField("Enter the Dogs name", text: $viewModel.name)
+            TextField("Enter the Dogs name", text: $name)
                 .multilineTextAlignment(.center)
                 .padding(EdgeInsets(top: 40, leading: 20, bottom: 20, trailing: 20))
-            Toggle("Register Birth date", isOn: $showDate)
-                .padding(EdgeInsets(top: 0, leading: 40, bottom: 10, trailing: 40))
-            if showDate {
-                DatePicker("Birth date ", selection: $currentDate, in: ...Date(), displayedComponents: .date)
-                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20))
-                    .datePickerStyle(GraphicalDatePickerStyle())
-                    .accentColor(Color.orange)
-            }
         }
         .fixFlickering()
-        .alert(item: $viewModel.alertItem, content: { alertItem in
+        .alert(item: $alertItem, content: { alertItem in
             Alert(title: alertItem.title,
                   message: alertItem.message,
                   dismissButton: .default(alertItem.buttonTitle))
         })
-        .sheet(isPresented: $viewModel.showImagePicker, onDismiss: {
-            viewModel.dismissImagePicker()
+        .sheet(isPresented: $showImagePicker, onDismiss: {
+            dismissImagePicker()
         }, content: {
-            ImagePicker(presenting: self.$viewModel.showImagePicker, uiImage: self.$viewModel.uiImage)
+            ImagePicker(presenting: $showImagePicker, uiImage: $uiImage)
         })
-        .actionSheet(isPresented: $viewModel.showAction) {
-            viewModel.sheet
+        .actionSheet(isPresented: $showAction) {
+            sheet
         }
         Group {
             Button(action: {
-                createDog(name: viewModel.name, image: viewModel.uiImage)
+                createDog(name: name, image: uiImage)
                 if dogCreated {
                     self.presentation.wrappedValue.dismiss()
                 }
@@ -77,7 +72,7 @@ struct NewDogView: View {
         }
     }
     private func createDog(name: String, image: UIImage? = nil) {
-        if viewModel.isDogValid(name: name, image: image) {
+        if isDogValid(name: name, image: image) {
             dogs.addDog(dog: Dog(name: name, image: image!))
             dogCreated = true
         }
@@ -85,11 +80,60 @@ struct NewDogView: View {
             dogCreated = false
         }
     }
+    var sheet: ActionSheet {
+        ActionSheet(
+            title: Text("Action"),
+            message: Text("Update Image"),
+            buttons: [
+                .default(Text("Change"), action: {
+                    self.dismissActionSheet()
+                    self.displayImagePicker()
+                }),
+                .cancel(Text("Close"), action: {
+                    self.dismissActionSheet()
+                }),
+                .destructive(Text("Remove"), action: {
+                    self.dismissActionSheet()
+                    self.uiImage = nil
+                })
+            ])
+    }
+    
+    func displayActionSheet() {
+        showAction = true
+    }
+    
+    func dismissActionSheet() {
+        showAction = false
+    }
+    
+    func displayImagePicker() {
+        showImagePicker = true
+    }
+    
+    func dismissImagePicker() {
+        showImagePicker = false
+    }
+    
+    func isDogValid(name: String, image: UIImage?) -> Bool {
+        if name != "" && image != nil {
+            return true
+        }
+        else if name == "" && image != nil  {
+            alertItem = AlertContext.NewDog.noName
+        }
+        else if name != "" && image == nil {
+            alertItem = AlertContext.NewDog.noImage
+        }
+        else {
+            alertItem = AlertContext.NewDog.noNameNoImage
+        }
+        return false
+    }
 }
 
 struct NewDog_Previews: PreviewProvider {
     static var previews: some View {
-        NewDogView(viewModel: NewDogViewModel())
-            .environmentObject(DogArray())
+        NewDogView()
     }
 }

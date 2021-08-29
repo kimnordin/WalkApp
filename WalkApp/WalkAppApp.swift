@@ -13,7 +13,7 @@ struct WalkAppApp: App {
     @StateObject private var user = User()
     var body: some Scene {
         WindowGroup {
-            DogListView(viewModel: DogListViewModel())
+            DogListView()
                 .environmentObject(user)
                 .environmentObject(dogData)
         }

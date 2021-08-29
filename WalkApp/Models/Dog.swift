@@ -65,7 +65,6 @@ class DogArray: ObservableObject, Codable {
     }
 }
 
-
 class Dog: ObservableObject, Identifiable, Codable {
     enum CodingKeys: CodingKey {
         case name, image, startDisplayDate, walkArray, firstSelect, secondSelect
@@ -118,7 +117,7 @@ class Dog: ObservableObject, Identifiable, Codable {
     
     func walk(time: Date, firstSelect: Bool, secondSelect: Bool) {
         let walk = Walk(time: time, firstAction: firstSelect, secondAction: secondSelect)
-        self.walkArray.append(walk)
+        walkArray.append(walk)
         sortWalks()
     }
     
