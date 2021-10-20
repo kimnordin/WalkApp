@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2214CAD272066E700853DE6 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2214CAC272066E700853DE6 /* ModalView.swift */; };
 		F29CEB2E26D6E05900C0F879 /* WalkAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB2D26D6E05900C0F879 /* WalkAppApp.swift */; };
 		F29CEB3226D6E05B00C0F879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29CEB3126D6E05B00C0F879 /* Assets.xcassets */; };
 		F29CEB3526D6E05B00C0F879 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29CEB3426D6E05B00C0F879 /* Preview Assets.xcassets */; };
 		F29CEB9226D6E0EC00C0F879 /* NewDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB7E26D6E0EB00C0F879 /* NewDogView.swift */; };
-		F29CEB9426D6E0EC00C0F879 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8126D6E0EB00C0F879 /* ModalView.swift */; };
 		F29CEB9526D6E0EC00C0F879 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8326D6E0EB00C0F879 /* DogDetailView.swift */; };
 		F29CEB9626D6E0EC00C0F879 /* TimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8526D6E0EB00C0F879 /* TimeRow.swift */; };
 		F29CEB9726D6E0EC00C0F879 /* WalkSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEB8726D6E0EB00C0F879 /* WalkSectionView.swift */; };
@@ -28,13 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2214CAC272066E700853DE6 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		F29CEB2A26D6E05900C0F879 /* WalkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29CEB2D26D6E05900C0F879 /* WalkAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkAppApp.swift; sourceTree = "<group>"; };
 		F29CEB3126D6E05B00C0F879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F29CEB3426D6E05B00C0F879 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F29CEB3626D6E05B00C0F879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29CEB7E26D6E0EB00C0F879 /* NewDogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDogView.swift; sourceTree = "<group>"; };
-		F29CEB8126D6E0EB00C0F879 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		F29CEB8326D6E0EB00C0F879 /* DogDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
 		F29CEB8526D6E0EB00C0F879 /* TimeRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRow.swift; sourceTree = "<group>"; };
 		F29CEB8726D6E0EB00C0F879 /* WalkSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkSectionView.swift; sourceTree = "<group>"; };
@@ -61,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2214CAB272066E700853DE6 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				F2214CAC272066E700853DE6 /* ModalView.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		F29CEB2126D6E05900C0F879 = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				F29CEB8226D6E0EB00C0F879 /* Dog */,
-				F29CEB8026D6E0EB00C0F879 /* Modal */,
 				F29CEB8826D6E0EB00C0F879 /* MyDogs */,
+				F2214CAB272066E700853DE6 /* Modal */,
 				F29CEB7D26D6E0EB00C0F879 /* NewDog */,
 				F29CEB8D26D6E0EB00C0F879 /* Profile */,
 				F29CEB8626D6E0EB00C0F879 /* WalkSection */,
@@ -129,15 +137,6 @@
 				F29CEB7E26D6E0EB00C0F879 /* NewDogView.swift */,
 			);
 			path = NewDog;
-			sourceTree = "<group>";
-		};
-		F29CEB8026D6E0EB00C0F879 /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-				F29CEB8126D6E0EB00C0F879 /* ModalView.swift */,
-			);
-			name = Modal;
-			path = ../../../../git/goDogUI/goDogUI/Views/Modal;
 			sourceTree = "<group>";
 		};
 		F29CEB8226D6E0EB00C0F879 /* Dog */ = {
@@ -279,11 +278,11 @@
 				F29CEBA426D6E13200C0F879 /* User.swift in Sources */,
 				F29CEB9226D6E0EC00C0F879 /* NewDogView.swift in Sources */,
 				F29CEBA326D6E13200C0F879 /* Walk.swift in Sources */,
+				F2214CAD272066E700853DE6 /* ModalView.swift in Sources */,
 				F29CEBA526D6E13200C0F879 /* Dog.swift in Sources */,
 				F29CEB9A26D6E0EC00C0F879 /* DogListRow.swift in Sources */,
 				F29CEB2E26D6E05900C0F879 /* WalkAppApp.swift in Sources */,
 				F29CEB9926D6E0EC00C0F879 /* DogListView.swift in Sources */,
-				F29CEB9426D6E0EC00C0F879 /* ModalView.swift in Sources */,
 				F29CEB9B26D6E0EC00C0F879 /* ProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
