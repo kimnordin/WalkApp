@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "reduxui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kimnordin/ReduxUI",
+      "state" : {
+        "branch" : "master",
+        "revision" : "4ee97665ec28f369a027f322e30cf8e8036ebc62"
+      }
+    }
+  ],
+  "version" : 2
+}

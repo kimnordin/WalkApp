@@ -8,17 +8,92 @@
 
 /* Begin PBXBuildFile section */
 		F28E52342C20B87E00817DA5 /* WalkAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52332C20B87E00817DA5 /* WalkAppApp.swift */; };
-		F28E52362C20B87E00817DA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52352C20B87E00817DA5 /* ContentView.swift */; };
 		F28E52382C20B88500817DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28E52372C20B88500817DA5 /* Assets.xcassets */; };
 		F28E523B2C20B88500817DA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28E523A2C20B88500817DA5 /* Preview Assets.xcassets */; };
+		F28E52922C20B8B100817DA5 /* PendingWalkMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52422C20B8B100817DA5 /* PendingWalkMiddleware.swift */; };
+		F28E52932C20B8B100817DA5 /* WalksMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52432C20B8B100817DA5 /* WalksMiddleware.swift */; };
+		F28E52962C20B8B100817DA5 /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52472C20B8B100817DA5 /* Walk.swift */; };
+		F28E52982C20B8B100817DA5 /* SettingsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E524B2C20B8B100817DA5 /* SettingsActions.swift */; };
+		F28E52992C20B8B100817DA5 /* NavigationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E524C2C20B8B100817DA5 /* NavigationActions.swift */; };
+		F28E529B2C20B8B100817DA5 /* WalksActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E524E2C20B8B100817DA5 /* WalksActions.swift */; };
+		F28E529D2C20B8B100817DA5 /* PendingWalkActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52502C20B8B100817DA5 /* PendingWalkActions.swift */; };
+		F28E529E2C20B8B100817DA5 /* SelectedWalkActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52512C20B8B100817DA5 /* SelectedWalkActions.swift */; };
+		F28E52A12C20B8B100817DA5 /* FirstButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E525A2C20B8B100817DA5 /* FirstButtonView.swift */; };
+		F28E52A22C20B8B100817DA5 /* SecondButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E525B2C20B8B100817DA5 /* SecondButtonView.swift */; };
+		F28E52A32C20B8B100817DA5 /* WalkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E525C2C20B8B100817DA5 /* WalkButtonView.swift */; };
+		F28E52A42C20B8B100817DA5 /* WalkSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E525D2C20B8B100817DA5 /* WalkSectionView.swift */; };
+		F28E52A72C20B8B200817DA5 /* EditWalkSecondButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52632C20B8B100817DA5 /* EditWalkSecondButton.swift */; };
+		F28E52A82C20B8B200817DA5 /* EditWalkFirstButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52642C20B8B100817DA5 /* EditWalkFirstButtonView.swift */; };
+		F28E52A92C20B8B200817DA5 /* EditWalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52652C20B8B100817DA5 /* EditWalkView.swift */; };
+		F28E52AB2C20B8B200817DA5 /* WalkRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52682C20B8B100817DA5 /* WalkRowView.swift */; };
+		F28E52AC2C20B8B200817DA5 /* WalkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52692C20B8B100817DA5 /* WalkListView.swift */; };
+		F28E52AD2C20B8B200817DA5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E526B2C20B8B100817DA5 /* SettingsView.swift */; };
+		F28E52AE2C20B8B200817DA5 /* ColorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E526D2C20B8B100817DA5 /* ColorListView.swift */; };
+		F28E52B42C20B8B200817DA5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52752C20B8B100817DA5 /* MainView.swift */; };
+		F28E52B52C20B8B200817DA5 /* SheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52772C20B8B100817DA5 /* SheetContentView.swift */; };
+		F28E52B62C20B8B200817DA5 /* Anyidentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52782C20B8B100817DA5 /* Anyidentifiable.swift */; };
+		F28E52B72C20B8B200817DA5 /* HeightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52792C20B8B100817DA5 /* HeightModifier.swift */; };
+		F28E52B92C20B8B200817DA5 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E527C2C20B8B100817DA5 /* AppReducer.swift */; };
+		F28E52BB2C20B8B200817DA5 /* SelectedWalkReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E527E2C20B8B100817DA5 /* SelectedWalkReducer.swift */; };
+		F28E52BC2C20B8B200817DA5 /* PendingWalkReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E527F2C20B8B100817DA5 /* PendingWalkReducer.swift */; };
+		F28E52BD2C20B8B200817DA5 /* WalksReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52802C20B8B100817DA5 /* WalksReducer.swift */; };
+		F28E52BF2C20B8B200817DA5 /* NavigationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52822C20B8B100817DA5 /* NavigationReducer.swift */; };
+		F28E52C02C20B8B200817DA5 /* SettingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52832C20B8B100817DA5 /* SettingsReducer.swift */; };
+		F28E52C12C20B8B200817DA5 /* Pedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52852C20B8B100817DA5 /* Pedometer.swift */; };
+		F28E52C22C20B8B200817DA5 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52872C20B8B100817DA5 /* AppState.swift */; };
+		F28E52C42C20B8B200817DA5 /* SettingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52892C20B8B100817DA5 /* SettingsState.swift */; };
+		F28E52C52C20B8B200817DA5 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E528A2C20B8B100817DA5 /* NavigationState.swift */; };
+		F28E52C62C20B8B200817DA5 /* PendingWalkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E528B2C20B8B100817DA5 /* PendingWalkState.swift */; };
+		F28E52C92C20B8B200817DA5 /* SelectedWalkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E528E2C20B8B100817DA5 /* SelectedWalkState.swift */; };
+		F28E52CA2C20B8B200817DA5 /* WalksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E528F2C20B8B100817DA5 /* WalksState.swift */; };
+		F28E52CB2C20B8B200817DA5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E52912C20B8B100817DA5 /* Extensions.swift */; };
+		F28E52CE2C20B8EA00817DA5 /* ReduxUI in Frameworks */ = {isa = PBXBuildFile; productRef = F28E52CD2C20B8EA00817DA5 /* ReduxUI */; };
+		F28E52D02C20C41200817DA5 /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F28E52CF2C20C41200817DA5 /* Colors.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F28E52302C20B87E00817DA5 /* WalkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28E52332C20B87E00817DA5 /* WalkAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkAppApp.swift; sourceTree = "<group>"; };
-		F28E52352C20B87E00817DA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F28E52372C20B88500817DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F28E523A2C20B88500817DA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F28E52422C20B8B100817DA5 /* PendingWalkMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingWalkMiddleware.swift; sourceTree = "<group>"; };
+		F28E52432C20B8B100817DA5 /* WalksMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalksMiddleware.swift; sourceTree = "<group>"; };
+		F28E52472C20B8B100817DA5 /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		F28E524B2C20B8B100817DA5 /* SettingsActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsActions.swift; sourceTree = "<group>"; };
+		F28E524C2C20B8B100817DA5 /* NavigationActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationActions.swift; sourceTree = "<group>"; };
+		F28E524E2C20B8B100817DA5 /* WalksActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalksActions.swift; sourceTree = "<group>"; };
+		F28E52502C20B8B100817DA5 /* PendingWalkActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingWalkActions.swift; sourceTree = "<group>"; };
+		F28E52512C20B8B100817DA5 /* SelectedWalkActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedWalkActions.swift; sourceTree = "<group>"; };
+		F28E525A2C20B8B100817DA5 /* FirstButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstButtonView.swift; sourceTree = "<group>"; };
+		F28E525B2C20B8B100817DA5 /* SecondButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondButtonView.swift; sourceTree = "<group>"; };
+		F28E525C2C20B8B100817DA5 /* WalkButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkButtonView.swift; sourceTree = "<group>"; };
+		F28E525D2C20B8B100817DA5 /* WalkSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkSectionView.swift; sourceTree = "<group>"; };
+		F28E52632C20B8B100817DA5 /* EditWalkSecondButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditWalkSecondButton.swift; sourceTree = "<group>"; };
+		F28E52642C20B8B100817DA5 /* EditWalkFirstButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditWalkFirstButtonView.swift; sourceTree = "<group>"; };
+		F28E52652C20B8B100817DA5 /* EditWalkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditWalkView.swift; sourceTree = "<group>"; };
+		F28E52682C20B8B100817DA5 /* WalkRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkRowView.swift; sourceTree = "<group>"; };
+		F28E52692C20B8B100817DA5 /* WalkListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkListView.swift; sourceTree = "<group>"; };
+		F28E526B2C20B8B100817DA5 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F28E526D2C20B8B100817DA5 /* ColorListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorListView.swift; sourceTree = "<group>"; };
+		F28E52752C20B8B100817DA5 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F28E52772C20B8B100817DA5 /* SheetContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetContentView.swift; sourceTree = "<group>"; };
+		F28E52782C20B8B100817DA5 /* Anyidentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anyidentifiable.swift; sourceTree = "<group>"; };
+		F28E52792C20B8B100817DA5 /* HeightModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightModifier.swift; sourceTree = "<group>"; };
+		F28E527C2C20B8B100817DA5 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		F28E527E2C20B8B100817DA5 /* SelectedWalkReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedWalkReducer.swift; sourceTree = "<group>"; };
+		F28E527F2C20B8B100817DA5 /* PendingWalkReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingWalkReducer.swift; sourceTree = "<group>"; };
+		F28E52802C20B8B100817DA5 /* WalksReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalksReducer.swift; sourceTree = "<group>"; };
+		F28E52822C20B8B100817DA5 /* NavigationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationReducer.swift; sourceTree = "<group>"; };
+		F28E52832C20B8B100817DA5 /* SettingsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsReducer.swift; sourceTree = "<group>"; };
+		F28E52852C20B8B100817DA5 /* Pedometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pedometer.swift; sourceTree = "<group>"; };
+		F28E52872C20B8B100817DA5 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F28E52892C20B8B100817DA5 /* SettingsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsState.swift; sourceTree = "<group>"; };
+		F28E528A2C20B8B100817DA5 /* NavigationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		F28E528B2C20B8B100817DA5 /* PendingWalkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingWalkState.swift; sourceTree = "<group>"; };
+		F28E528E2C20B8B100817DA5 /* SelectedWalkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedWalkState.swift; sourceTree = "<group>"; };
+		F28E528F2C20B8B100817DA5 /* WalksState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalksState.swift; sourceTree = "<group>"; };
+		F28E52912C20B8B100817DA5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F28E52CF2C20C41200817DA5 /* Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28E52CE2C20B8EA00817DA5 /* ReduxUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +127,17 @@
 		F28E52322C20B87E00817DA5 /* WalkApp */ = {
 			isa = PBXGroup;
 			children = (
+				F28E52842C20B8B100817DA5 /* Managers */,
+				F28E52452C20B8B100817DA5 /* Models */,
+				F28E524A2C20B8B100817DA5 /* Actions */,
+				F28E52412C20B8B100817DA5 /* Middleware */,
+				F28E527A2C20B8B100817DA5 /* Reducer */,
+				F28E52862C20B8B100817DA5 /* State */,
+				F28E52532C20B8B100817DA5 /* Views */,
+				F28E52902C20B8B100817DA5 /* Utils */,
 				F28E52332C20B87E00817DA5 /* WalkAppApp.swift */,
-				F28E52352C20B87E00817DA5 /* ContentView.swift */,
 				F28E52372C20B88500817DA5 /* Assets.xcassets */,
+				F28E52CF2C20C41200817DA5 /* Colors.plist */,
 				F28E52392C20B88500817DA5 /* Preview Content */,
 			);
 			path = WalkApp;
@@ -65,6 +149,163 @@
 				F28E523A2C20B88500817DA5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F28E52412C20B8B100817DA5 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52432C20B8B100817DA5 /* WalksMiddleware.swift */,
+				F28E52422C20B8B100817DA5 /* PendingWalkMiddleware.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		F28E52452C20B8B100817DA5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52472C20B8B100817DA5 /* Walk.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F28E524A2C20B8B100817DA5 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				F28E524C2C20B8B100817DA5 /* NavigationActions.swift */,
+				F28E524B2C20B8B100817DA5 /* SettingsActions.swift */,
+				F28E524E2C20B8B100817DA5 /* WalksActions.swift */,
+				F28E52512C20B8B100817DA5 /* SelectedWalkActions.swift */,
+				F28E52502C20B8B100817DA5 /* PendingWalkActions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		F28E52532C20B8B100817DA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52752C20B8B100817DA5 /* MainView.swift */,
+				F28E52542C20B8B100817DA5 /* Walks */,
+				F28E526A2C20B8B100817DA5 /* Settings */,
+				F28E52762C20B8B100817DA5 /* Sheet */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F28E52542C20B8B100817DA5 /* Walks */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52692C20B8B100817DA5 /* WalkListView.swift */,
+				F28E52682C20B8B100817DA5 /* WalkRowView.swift */,
+				F28E52582C20B8B100817DA5 /* WalkSection */,
+				F28E52612C20B8B100817DA5 /* EditWalk */,
+			);
+			path = Walks;
+			sourceTree = "<group>";
+		};
+		F28E52582C20B8B100817DA5 /* WalkSection */ = {
+			isa = PBXGroup;
+			children = (
+				F28E525D2C20B8B100817DA5 /* WalkSectionView.swift */,
+				F28E52592C20B8B100817DA5 /* Buttons */,
+			);
+			path = WalkSection;
+			sourceTree = "<group>";
+		};
+		F28E52592C20B8B100817DA5 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F28E525C2C20B8B100817DA5 /* WalkButtonView.swift */,
+				F28E525A2C20B8B100817DA5 /* FirstButtonView.swift */,
+				F28E525B2C20B8B100817DA5 /* SecondButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F28E52612C20B8B100817DA5 /* EditWalk */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52652C20B8B100817DA5 /* EditWalkView.swift */,
+				F28E52622C20B8B100817DA5 /* WalkButtons */,
+			);
+			path = EditWalk;
+			sourceTree = "<group>";
+		};
+		F28E52622C20B8B100817DA5 /* WalkButtons */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52642C20B8B100817DA5 /* EditWalkFirstButtonView.swift */,
+				F28E52632C20B8B100817DA5 /* EditWalkSecondButton.swift */,
+			);
+			path = WalkButtons;
+			sourceTree = "<group>";
+		};
+		F28E526A2C20B8B100817DA5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F28E526B2C20B8B100817DA5 /* SettingsView.swift */,
+				F28E526C2C20B8B100817DA5 /* ColorList */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F28E526C2C20B8B100817DA5 /* ColorList */ = {
+			isa = PBXGroup;
+			children = (
+				F28E526D2C20B8B100817DA5 /* ColorListView.swift */,
+			);
+			path = ColorList;
+			sourceTree = "<group>";
+		};
+		F28E52762C20B8B100817DA5 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52772C20B8B100817DA5 /* SheetContentView.swift */,
+				F28E52782C20B8B100817DA5 /* Anyidentifiable.swift */,
+				F28E52792C20B8B100817DA5 /* HeightModifier.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		F28E527A2C20B8B100817DA5 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				F28E527C2C20B8B100817DA5 /* AppReducer.swift */,
+				F28E52822C20B8B100817DA5 /* NavigationReducer.swift */,
+				F28E52832C20B8B100817DA5 /* SettingsReducer.swift */,
+				F28E52802C20B8B100817DA5 /* WalksReducer.swift */,
+				F28E527E2C20B8B100817DA5 /* SelectedWalkReducer.swift */,
+				F28E527F2C20B8B100817DA5 /* PendingWalkReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		F28E52842C20B8B100817DA5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52852C20B8B100817DA5 /* Pedometer.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F28E52862C20B8B100817DA5 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52872C20B8B100817DA5 /* AppState.swift */,
+				F28E528A2C20B8B100817DA5 /* NavigationState.swift */,
+				F28E52892C20B8B100817DA5 /* SettingsState.swift */,
+				F28E528F2C20B8B100817DA5 /* WalksState.swift */,
+				F28E528E2C20B8B100817DA5 /* SelectedWalkState.swift */,
+				F28E528B2C20B8B100817DA5 /* PendingWalkState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		F28E52902C20B8B100817DA5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F28E52912C20B8B100817DA5 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +324,9 @@
 			dependencies = (
 			);
 			name = WalkApp;
+			packageProductDependencies = (
+				F28E52CD2C20B8EA00817DA5 /* ReduxUI */,
+			);
 			productName = WalkApp;
 			productReference = F28E52302C20B87E00817DA5 /* WalkApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +355,9 @@
 				Base,
 			);
 			mainGroup = F28E52272C20B87E00817DA5;
+			packageReferences = (
+				F28E52CC2C20B8EA00817DA5 /* XCRemoteSwiftPackageReference "ReduxUI" */,
+			);
 			productRefGroup = F28E52312C20B87E00817DA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28E52D02C20C41200817DA5 /* Colors.plist in Resources */,
 				F28E523B2C20B88500817DA5 /* Preview Assets.xcassets in Resources */,
 				F28E52382C20B88500817DA5 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +385,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F28E52362C20B87E00817DA5 /* ContentView.swift in Sources */,
+				F28E52B92C20B8B200817DA5 /* AppReducer.swift in Sources */,
+				F28E52B42C20B8B200817DA5 /* MainView.swift in Sources */,
+				F28E52932C20B8B100817DA5 /* WalksMiddleware.swift in Sources */,
+				F28E52C42C20B8B200817DA5 /* SettingsState.swift in Sources */,
+				F28E529E2C20B8B100817DA5 /* SelectedWalkActions.swift in Sources */,
+				F28E52C52C20B8B200817DA5 /* NavigationState.swift in Sources */,
+				F28E52A82C20B8B200817DA5 /* EditWalkFirstButtonView.swift in Sources */,
+				F28E52C62C20B8B200817DA5 /* PendingWalkState.swift in Sources */,
+				F28E52A22C20B8B100817DA5 /* SecondButtonView.swift in Sources */,
+				F28E52A42C20B8B100817DA5 /* WalkSectionView.swift in Sources */,
+				F28E52982C20B8B100817DA5 /* SettingsActions.swift in Sources */,
+				F28E52922C20B8B100817DA5 /* PendingWalkMiddleware.swift in Sources */,
+				F28E52CA2C20B8B200817DA5 /* WalksState.swift in Sources */,
+				F28E52BD2C20B8B200817DA5 /* WalksReducer.swift in Sources */,
+				F28E52A72C20B8B200817DA5 /* EditWalkSecondButton.swift in Sources */,
+				F28E52B62C20B8B200817DA5 /* Anyidentifiable.swift in Sources */,
+				F28E52C12C20B8B200817DA5 /* Pedometer.swift in Sources */,
+				F28E52B72C20B8B200817DA5 /* HeightModifier.swift in Sources */,
+				F28E52BC2C20B8B200817DA5 /* PendingWalkReducer.swift in Sources */,
+				F28E52A32C20B8B100817DA5 /* WalkButtonView.swift in Sources */,
+				F28E52AE2C20B8B200817DA5 /* ColorListView.swift in Sources */,
+				F28E52A92C20B8B200817DA5 /* EditWalkView.swift in Sources */,
+				F28E52C92C20B8B200817DA5 /* SelectedWalkState.swift in Sources */,
+				F28E52C02C20B8B200817DA5 /* SettingsReducer.swift in Sources */,
+				F28E52AD2C20B8B200817DA5 /* SettingsView.swift in Sources */,
+				F28E52BB2C20B8B200817DA5 /* SelectedWalkReducer.swift in Sources */,
+				F28E52962C20B8B100817DA5 /* Walk.swift in Sources */,
+				F28E52B52C20B8B200817DA5 /* SheetContentView.swift in Sources */,
+				F28E52AC2C20B8B200817DA5 /* WalkListView.swift in Sources */,
+				F28E52AB2C20B8B200817DA5 /* WalkRowView.swift in Sources */,
+				F28E52C22C20B8B200817DA5 /* AppState.swift in Sources */,
+				F28E52A12C20B8B100817DA5 /* FirstButtonView.swift in Sources */,
+				F28E529B2C20B8B100817DA5 /* WalksActions.swift in Sources */,
+				F28E52992C20B8B100817DA5 /* NavigationActions.swift in Sources */,
 				F28E52342C20B87E00817DA5 /* WalkAppApp.swift in Sources */,
+				F28E52CB2C20B8B200817DA5 /* Extensions.swift in Sources */,
+				F28E52BF2C20B8B200817DA5 /* NavigationReducer.swift in Sources */,
+				F28E529D2C20B8B100817DA5 /* PendingWalkActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +556,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WalkApp/Preview Content\"";
+				DEVELOPMENT_TEAM = LZB8X3995T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "This app requires access to your Pedometer to count steps";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +586,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WalkApp/Preview Content\"";
+				DEVELOPMENT_TEAM = LZB8X3995T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "This app requires access to your Pedometer to count steps";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +630,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F28E52CC2C20B8EA00817DA5 /* XCRemoteSwiftPackageReference "ReduxUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kimnordin/ReduxUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F28E52CD2C20B8EA00817DA5 /* ReduxUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F28E52CC2C20B8EA00817DA5 /* XCRemoteSwiftPackageReference "ReduxUI" */;
+			productName = ReduxUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F28E52282C20B87E00817DA5 /* Project object */;
 }

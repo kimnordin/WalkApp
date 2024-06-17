@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import ReduxUI
+
+let store = Store<AppState>(state: initialAppState(), reducer: appReducer, middlewares: [walksMiddleware, pendingWalkMiddleware])
 
 @main
 struct WalkAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environmentObject(store)
         }
     }
 }
