@@ -15,6 +15,7 @@ struct WalkAppApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .accentColor(Color.dogOrange)
                 .environmentObject(store)
         }
     }

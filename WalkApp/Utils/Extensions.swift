@@ -22,7 +22,6 @@ extension Action {
 
 // MARK: - Colors
 extension Color {
-    static let dogOrange = Color(UIColor(named: "DogOrange")!)
     static let label = Color(UIColor.label)
     static let invertedLabel = Color(UIColor(dynamicProvider: { $0.userInterfaceStyle == .dark ? .black : .white }))
     
