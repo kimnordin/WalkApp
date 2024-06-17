@@ -46,6 +46,22 @@ extension Color {
 }
 
 // MARK: - Types
+extension Date {
+    func dateToString(format: String = "yyyy-MM-dd") -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.dateFormat = format
+        return formatter.string(from: self)
+    }
+    
+    func timeToString(format: String = "HH:mm") -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.dateFormat = format
+        return formatter.string(from: self)
+    }
+}
+
 extension Double {
     func truncate(places: Int) -> Double {
         return Double(floor(pow(10.0, Double(places)) * self) / pow(10.0, Double(places)))
@@ -75,15 +91,6 @@ extension Double {
     }
 }
 
-extension Date {
-    func timeToString(format: String = "HH:mm") -> String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.dateFormat = format
-        return formatter.string(from: self)
-    }
-}
-
 // MARK: - SwiftUI
 extension View {
     func dynamicSheet(_ height: CGFloat) -> some View {
@@ -102,6 +109,12 @@ extension Button {
 }
 
 extension Text {
+    func timeTitle(font: Font) -> some View {
+        lineLimit(1)
+            .font(font)
+            .minimumScaleFactor(0.7)
+    }
+    
     func walkActionButton(selected: Bool, selectedColor: Color? = .white, unselectedColor: Color? = .label, width: CGFloat = 90, height: CGFloat = 60) -> some View {
         bold()
             .frame(width: width, height: height)

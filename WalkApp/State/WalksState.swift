@@ -7,13 +7,6 @@
 
 import ReduxUI
 
-struct WalksState {
+struct WalksState: StateType {
     var walks = [Walk]()
-    let pedometer = Pedometer()
-}
-
-extension WalksState: StateType {
-    static func == (lhs: WalksState, rhs: WalksState) -> Bool {
-        return lhs.walks == rhs.walks
-    }
 }

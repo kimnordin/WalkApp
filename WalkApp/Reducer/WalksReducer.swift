@@ -14,7 +14,9 @@ func walksReducer(action: Action, state: WalksState?) -> WalksState {
     case let action as AddWalk:
         state.walks.append(action.walk)
     case let action as UpdateWalk:
+        print("update walk")
         if let index = state.walks.firstIndex(where: { $0.id == action.walk.id }) {
+            print("walk index: ", index)
             state.walks[index] = action.walk
         }
     default: break

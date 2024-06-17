@@ -18,12 +18,12 @@ func walksMiddleware(_ dispatch: @escaping Dispatch, _ state: @escaping () -> Ap
                     dispatch(UpdateWalk(walk: walk))
                 case let action as SelectedWalkUpdateFirstTime:
                     guard let walk = state.selectedWalkState.selectedWalk else { break }
-                    state.walksState.pedometer.countSteps(from: action.date, to: walk.secondTime) { distance in
+                    pedometer.countSteps(from: action.date, to: walk.secondTime) { distance in
                         dispatch(SelectedWalkUpdateDistance(distance: distance))
                     }
                 case let action as SelectedWalkUpdateSecondTime:
                     guard let walk = state.selectedWalkState.selectedWalk else { break }
-                    state.walksState.pedometer.countSteps(from: walk.firstTime, to: action.date) { distance in
+                    pedometer.countSteps(from: walk.firstTime, to: action.date) { distance in
                         dispatch(SelectedWalkUpdateDistance(distance: distance))
                     }
                 default: break

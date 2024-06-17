@@ -22,7 +22,7 @@ struct Walk: Identifiable, Equatable {
     var firstSelect: Bool = false
     var secondSelect: Bool = false
     
-    init(firstTime: Date = Date(), secondTime: Date = Date(), distance: Double = 0.0, firstSelect: Bool = false, secondSelect: Bool = false) {
+    init(firstTime: Date, secondTime: Date = Date(), distance: Double = 0.0, firstSelect: Bool = false, secondSelect: Bool = false) {
         self.firstTime = firstTime
         self.secondTime = secondTime
         self.distance = distance

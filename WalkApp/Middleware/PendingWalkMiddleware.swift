@@ -14,7 +14,7 @@ func pendingWalkMiddleware(_ dispatch: @escaping Dispatch, _ state: @escaping ()
             if let state = state() {
                 switch action {
                 case let action as StartWalking:
-                    state.walksState.pedometer.startPedometer(from: action.walk.firstTime) { distance in
+                    pedometer.startPedometer(from: action.walk.firstTime) { distance in
                         dispatch(PendingWalkUpdateDistance(distance: distance))
                     }
                 case is StopWalking:

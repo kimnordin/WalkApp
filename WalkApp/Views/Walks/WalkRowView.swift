@@ -10,48 +10,57 @@ import ReduxUI
 
 struct WalkRowView: View {
     @EnvironmentObject private var store: Store<AppState>
-    @State var walk: Walk?
-    
-    @ViewBuilder private func WalkTimeView(_ walk: Walk) -> some View {
-        VStack(spacing: 4) {
-            let first = walk.firstTime.timeToString()
-            let second = walk.secondTime.timeToString()
-            Text(first + " | " + second)
-                .lineLimit(1)
-                .minimumScaleFactor(0.5)
-        }
-        .padding(.trailing, 10)
-        .frame(maxWidth: .infinity)
-    }
-    
-    @ViewBuilder private func WalkSelectionView(_ walk: Walk) -> some View {
-        VStack(spacing: 3) {
-            if walk.firstSelect {
-                Text(store.state.settingsState.firstTitle)
-                    .smallSelectionIndication(color: store.state.settingsState.firstColor)
-            }
-            if walk.secondSelect {
-                Text(store.state.settingsState.secondTitle)
-                    .smallSelectionIndication(color: store.state.settingsState.secondColor)
-            }
-        }
-        .padding(5)
-    }
+    var walk: Walk
     
     var body: some View {
-        HStack(alignment: .center) {
-            if let walk = walk {
-                WalkTimeView(walk)
-                Spacer()
-                WalkSelectionView(walk)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(formattedDate())
+                    .timeTitle(font: .footnote)
+                    .opacity(0.7)
+                    .padding(EdgeInsets(top: 4, leading: 0, bottom: 0, trailing: 0))
+                HStack {
+                    Text(walk.firstTime.timeToString())
+                        .timeTitle(font: .title)
+                    Text(walk.secondTime.timeToString())
+                        .timeTitle(font: .subheadline)
+                }
             }
+            Spacer()
+            VStack(spacing: 3) {
+                if walk.firstSelect {
+                    Text(store.state.settingsState.firstTitle)
+                        .selectionIndication(color: store.state.settingsState.firstColor)
+                }
+                if walk.secondSelect {
+                    Text(store.state.settingsState.secondTitle)
+                        .selectionIndication(color: store.state.settingsState.secondColor)
+                }
+            }
+            .frame(width: 80)
+            Text(walk.distance.formatDistance())
+                .frame(width: 100)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+        }
+    }
+    
+    private func formattedDate() -> String {
+        if walk.firstTime.dateToString() == walk.secondTime.dateToString() {
+            let date = walk.firstTime.dateToString()
+            return date
+        } else {
+            let firstDate = walk.firstTime.dateToString()
+            let secondDate = walk.secondTime.dateToString()
+            let combinedDate = "\(firstDate)  |  \(secondDate)"
+            return combinedDate
         }
     }
 }
 
 struct WalkRowView_Previews: PreviewProvider {
     static var previews: some View {
-        WalkRowView()
+        WalkRowView(walk: Walk(firstTime: Date()))
             .environmentObject(store)
     }
 }

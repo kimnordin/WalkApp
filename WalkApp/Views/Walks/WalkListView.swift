@@ -43,7 +43,7 @@ struct WalkListView: View {
             }
         }
         .onReceive(store.$state) {
-            newState($0.walksState)
+            newState($0)
         }
         .sheet(item: $selectedWalk, onDismiss: {
             SelectWalk(walk: nil).dispatchFromMain()
@@ -56,8 +56,9 @@ struct WalkListView: View {
 }
 
 extension WalkListView: StoreSubscriber {
-    func newState(_ state: WalksState) {
-        walks = state.walks
+    func newState(_ state: AppState) {
+        walks = state.walksState.walks
+        selectedWalk = state.selectedWalkState.selectedWalk
     }
 }
 
