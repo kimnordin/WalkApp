@@ -10,7 +10,7 @@ import ReduxUI
 
 let defaultFirstTitle = "💦"
 let defaultSecondTitle = "💩"
-let defaultWalkColor = Color.dogOrange
+let defaultWalkColor = Color.walkOrange
 let defaultFirstColor = Color.blue
 let defaultSecondColor = Color.red
 

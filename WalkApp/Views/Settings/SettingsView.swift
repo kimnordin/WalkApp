@@ -66,7 +66,7 @@ struct SettingsView: View {
                 Button("Restore to Default") {
                     RestoreDefaultSettings().dispatchFromMain()
                 }
-                .foregroundColor(.dogOrange)
+                .foregroundColor(.walkOrange)
             }
             .navigationBarTitle("Settings")
             .padding(.bottom, 20)

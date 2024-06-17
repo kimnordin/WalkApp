@@ -24,14 +24,14 @@ struct EditWalkView: View {
                 ), in: ...walk.secondTime, displayedComponents: [.date, .hourAndMinute])
                     .padding([.bottom, .leading, .trailing], 20)
                     .datePickerStyle(DefaultDatePickerStyle())
-                    .accentColor(.dogOrange)
+                    .accentColor(.walkOrange)
                 DatePicker("Second date ", selection: Binding(
                     get: { walk.secondTime },
                     set: { SelectedWalkUpdateSecondTime(date: $0).dispatchFromMain() }
                 ), in: ...Date(), displayedComponents: [.date, .hourAndMinute])
                     .padding([.bottom, .leading, .trailing], 20)
                     .datePickerStyle(DefaultDatePickerStyle())
-                    .accentColor(.dogOrange)
+                    .accentColor(.walkOrange)
             }
             HStack(spacing: 30) {
                 EditWalkFirstButtonView()

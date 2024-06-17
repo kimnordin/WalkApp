@@ -17,7 +17,8 @@ struct WalkListView: View {
         NavigationView {
             VStack {
                 if walks.isEmpty {
-                    Text("No Walks made")
+                    Text("No Walks Made")
+                        .frame(maxHeight: .infinity)
                 } else {
                     List {
                         ForEach(walks) { walk in
@@ -29,17 +30,16 @@ struct WalkListView: View {
                         }
                     }
                 }
+                Spacer()
+                WalkSectionView()
             }
             .navigationBarTitle(Text("Walks"))
             .toolbar {
-                ToolbarItem(placement: .bottomBar) {
+                ToolbarItem(placement: .topBarTrailing) {
                     Button("Settings") {
                         NavigateTo(destination: .settings).dispatchFromMain()
                     }
                 }
-            }
-            Group {
-                WalkSectionView()
             }
         }
         .onReceive(store.$state) {
